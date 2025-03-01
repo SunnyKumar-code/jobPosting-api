@@ -20,7 +20,7 @@ const jobCreate= async (req, res,next) => {
        
         res.json({
             success: true,
-            message: "Job Created successfully"
+            message:` Job Created successfully ${response._id} `
         })
     }catch(err){
         next(err)
