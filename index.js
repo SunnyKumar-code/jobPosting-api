@@ -9,7 +9,7 @@ app.use(cors())
 //Middlewares
 app.use(express.json())
 
-const DB_URL = "mongodb://127.0.0.1:27017/job_app"
+const DB_URL = "mongodb+srv://sk202542:OACI6BZkikMcZkx2@cluster0.wrevt.mongodb.net//job_app"
 //DS Connection
 mongoose
     .connect(DB_URL)
