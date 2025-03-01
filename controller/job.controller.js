@@ -39,7 +39,8 @@ const jobList =async(req, res,next) => {
     //         $gte : minExperienceRequired
     //     }
     //    });
-        const jobsList = await JobModel.findById("67bca18f464fb0c7d3f15541")
+    const id = req.query.id
+        const jobsList = await JobModel.findById(id)
 
         res.json({
             success: true,
